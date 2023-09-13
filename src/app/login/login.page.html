@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inicio de sesion</ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen ="true">
+  <ion-card id="login">  
+    <div class="imagen_login"> 
+      <img src="../../assets/img/inicio.png" alt="login"  class="imagen_responsiva">
+   </div>
+    
+    <form>
+      <ion-item lines="full">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input labelPlacement="stacked" [clearOnEdit]="true" type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="bienvenido()" type="submit" color="light" expand="block" shape="round">Iniciar sesion</ion-button>          
+         <h3> <a (click)="forgoPassword()" class="small-text">Olvidaste tu contraseña? aqui!</a></h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>  
+          <ion-button (click)="home()" id type="submit" color="light" shape="round">volver</ion-button>
+        </ion-col>
+    </ion-row>
+    </form>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer class="footer">
+  <ion-toolbar color ="dark">
+    <ion-title>Conoce nuestras redes</ion-title>  
+    <ion-segment [scrollable]="true" value="heart">       
+      <ion-segment-button value="heart">
+        <ion-icon name="heart"></ion-icon>
+      </ion-segment-button>        
+      <ion-segment-button value="star">
+        <ion-icon name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="call">
+        <ion-icon name="call"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="globe">
+        <ion-icon name="globe"></ion-icon>  
+          </ion-segment-button>        
+      <ion-segment-button value="person">
+        <ion-icon name="person"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>       
+  </ion-toolbar>
+</ion-footer>

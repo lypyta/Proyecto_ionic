@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar>    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title >Bienvenido {{username}}</ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="auth-form">  
+  <ion-card id="home"> 
+   <div class="imagen_logo"> 
+      <img src="../../assets/img/logo2.png" alt="logo"  class="imagen_responsiva">
+   </div>
+    <ion-card-content>      
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-center>
+            
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-content class="ion-padding">
+    
+    <ion-button id="open-modal" color="light" colorexpand="block" expand="block" shape="round">Que quieres hacer</ion-button>
+    <ion-button [routerLink]="['/home']" id type="submit" color="light" shape="round">volver</ion-button>
+    <ion-modal 
+      trigger="open-modal"
+      [initialBreakpoint]="0.25"
+      [breakpoints]="[0, 0.25, 0.5, 0.75]"
+      handleBehavior="cycle"
+    >
+      <ng-template>
+        <ion-content class="ion-padding">
+          <div class="ion-margin-top">
+            <ion-item href="#" disabled="true" color="light" lines="full">
+              <ion-label>Ver Catalogo</ion-label>               
+            </ion-item>
+            <ion-item href="#" disabled="true" color="light" lines="full">
+              <ion-label>Agendar Pedido</ion-label>               
+            </ion-item>
+            <ion-item href="#" disabled="true" color="light" lines="full">
+              <ion-label>Consultar el estado de tu pedido</ion-label>               
+            </ion-item>
+                          
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>        
+</ion-content>
+
+  <ion-footer>
+  <ion-toolbar color ="dark">
+    <ion-title>Conoce nuestras redes</ion-title>  
+    <ion-segment [scrollable]="true" value="heart">       
+      <ion-segment-button value="heart">
+        <ion-icon name="heart"></ion-icon>
+      </ion-segment-button>        
+      <ion-segment-button value="star">
+        <ion-icon name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="call">
+        <ion-icon name="call"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="globe">
+        <ion-icon name="globe"></ion-icon>  
+          </ion-segment-button>        
+      <ion-segment-button value="person">
+        <ion-icon name="person"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>       
+  </ion-toolbar>
+</ion-footer>

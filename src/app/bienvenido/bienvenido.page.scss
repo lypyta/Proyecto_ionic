@@ -1,0 +1,18 @@
+.imagen_logo {
+    display: flex; /* Utilizamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+  }
+  
+  .imagen_responsiva {
+    max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+  }
+  ion-content {
+    --background: black; 
+    color: white; 
+  }
+  ion-card {
+    background-color: black; 
+    color: white; 
+  }

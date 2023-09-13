@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar>
+    <ion-menu  contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="dark">
+          <ion-title>Bienvenido</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">This is the menu content.</ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="dark">          
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Menu</ion-title>
+          <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">ffffff</ion-content>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-card id="home">
+    <div class="imagen_logo">
+      <img src="../../assets/img/logo2.png" alt="logo" class="imagen_responsiva">
+    </div>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-center>
+            
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-button (click)="registration()" color="light" shape="round" expand="block">Registrarse</ion-button>
+  <h3> <a class="small-text">Ya tienes cuenta? </a> </h3>
+  <ion-button (click)="login()"color="light" shape="round" expand="block">Iniciasesión</ion-button>
+  </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title>Conoce nuestras redes</ion-title>
+    <ion-segment [scrollable]="true" value="heart">
+      <ion-segment-button value="heart">
+        <ion-icon name="heart"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="star">
+        <ion-icon name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="call">
+        <ion-icon name="call"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="globe">
+        <ion-icon name="globe"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="person">
+        <ion-icon name="person"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
