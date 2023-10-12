@@ -2,6 +2,7 @@ import { Component, } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-bienvenido',
   templateUrl: './bienvenido.page.html',
