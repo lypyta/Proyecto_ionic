@@ -28,14 +28,29 @@ const routes: Routes = [
     path: 'registration',
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
-  {
-    path: 'agendar',
-    loadChildren: () => import('./agendar/agendar.module').then( m => m.AgendarPageModule)
-  },
+
   {
     path: '**',
     loadChildren: () => import('./not-found/not-found.module').then( m => m.NotFoundPageModule)
+  },  
+   
+  {
+    path: 'produc-nuevo',
+    loadChildren: () => import('./producto/produc-nuevo/produc-nuevo.module').then( m => m.ProducNuevoPageModule)
   },
+  {
+    path: 'produc-eliminar',
+    loadChildren: () => import('./producto/produc-eliminar/produc-eliminar.module').then( m => m.ProducEliminarPageModule)
+  },
+  {
+    path: 'produc-editar/:id',
+    loadChildren: () => import('./producto/produc-editar/produc-editar.module').then( m => m.ProducEditarPageModule)
+  },
+  {
+    path: 'produc-listar/:id',
+    loadChildren: () => import('./producto/produc-listar/produc-listar.module').then( m => m.ProducListarPageModule)
+  },
+
   
 ];
 
