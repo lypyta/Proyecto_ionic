@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ProducEditarPageRoutingModule } from './produc-editar-routing.module';
 
 import { ProducEditarPage } from './produc-editar.page';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProducEditarPageRoutingModule
+    ProducEditarPageRoutingModule,
+    ReactiveFormsModule, 
   ],
   declarations: [ProducEditarPage]
 })

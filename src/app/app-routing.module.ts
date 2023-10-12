@@ -29,10 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
 
-  {
-    path: '**',
-    loadChildren: () => import('./not-found/not-found.module').then( m => m.NotFoundPageModule)
-  },  
+ 
    
   {
     path: 'produc-nuevo',
@@ -49,7 +46,12 @@ const routes: Routes = [
   {
     path: 'produc-listar/:id',
     loadChildren: () => import('./producto/produc-listar/produc-listar.module').then( m => m.ProducListarPageModule)
-  },
+  }, 
+  
+  {
+    path: '**',
+    loadChildren: () => import('./not-found/not-found.module').then( m => m.NotFoundPageModule)
+  },  
 
   
 ];

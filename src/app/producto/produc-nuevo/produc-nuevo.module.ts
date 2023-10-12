@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ProducNuevoPageRoutingModule } from './produc-nuevo-routing.module';
 
 import { ProducNuevoPage } from './produc-nuevo.page';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProducNuevoPageRoutingModule
+    ProducNuevoPageRoutingModule,
+    ReactiveFormsModule,
+
   ],
   declarations: [ProducNuevoPage]
 })
