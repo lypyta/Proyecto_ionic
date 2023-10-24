@@ -15,8 +15,7 @@ const routes: Routes = [
   {
     path: 'bienvenido',
     loadChildren: () => import('./bienvenido/bienvenido.module').then( m => m.BienvenidoPageModule)
-  },
-  
+  },  
   {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
@@ -29,7 +28,7 @@ const routes: Routes = [
     path: 'registration',
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   }, 
-    {
+  {
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
   },
