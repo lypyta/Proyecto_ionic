@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ProducListarPageRoutingModule } from './produc-listar-routing.module';
+import { MapaPageRoutingModule } from './mapa-routing.module';
 
-import { ProducListarPage } from './produc-listar.page';
+import { MapaPage } from './mapa.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProducListarPageRoutingModule
+    MapaPageRoutingModule
   ],
-  declarations: [ProducListarPage]
+  declarations: [MapaPage]
 })
-export class ProducListarPageModule {}
+export class MapaPageModule {}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [  
   {
     path: '',
@@ -27,31 +28,15 @@ const routes: Routes = [
   {
     path: 'registration',
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
-  },
-
- 
-   
-  {
-    path: 'produc-nuevo',
-    loadChildren: () => import('./producto/produc-nuevo/produc-nuevo.module').then( m => m.ProducNuevoPageModule)
-  },
-  {
-    path: 'produc-eliminar',
-    loadChildren: () => import('./producto/produc-eliminar/produc-eliminar.module').then( m => m.ProducEliminarPageModule)
-  },
-  {
-    path: 'produc-editar/:id',
-    loadChildren: () => import('./producto/produc-editar/produc-editar.module').then( m => m.ProducEditarPageModule)
-  },
-  {
-    path: 'produc-listar/:id',
-    loadChildren: () => import('./producto/produc-listar/produc-listar.module').then( m => m.ProducListarPageModule)
   }, 
-  
+    {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
   {
     path: '**',
     loadChildren: () => import('./not-found/not-found.module').then( m => m.NotFoundPageModule)
-  },  
+  },
 
   
 ];
