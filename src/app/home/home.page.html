@@ -39,30 +39,46 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  <ion-button (click)="registration()" color="light" shape="round" expand="block">Registrarse</ion-button>
+  <a href="registration">
+    <ion-button color="light" shape="round" expand="block">Registrarse</ion-button>
+  </a>
   <h3> <a class="small-text">Ya tienes cuenta? </a> </h3>
   <ion-button (click)="login()"color="light" shape="round" expand="block">Iniciasesión</ion-button>
 </ion-content>
 
-  <ion-footer>
-    <ion-toolbar color="dark">
-      <ion-title>Conoce nuestras redes</ion-title>
-      <ion-segment [scrollable]="true">
-        <ion-segment-button value="logo-instagram">
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title>Conoce nuestras redes</ion-title>
+    <ion-segment [scrollable]="true" class="horizontal-icons">                
+      <a href="#">
+        <ion-segment-button value="instagram">
           <ion-icon name="logo-instagram"></ion-icon>
         </ion-segment-button>
-        <ion-segment-button value="logo-facebook">
-          <ion-icon name="logo-facebook"></ion-icon>
+      </a>       
+      <a href="#">
+        <ion-segment-button value="facebook">
+          <ion-icon name="logo-facebook"></ion-icon> 
         </ion-segment-button>
-        <ion-segment-button value="camera-outline">
-          <ion-icon name="camera-outline"></ion-icon>
-        </ion-segment-button>      
-        <ion-segment-button value="map-outline">
-          <ion-icon href="mapa" name="map-outline" ></ion-icon>
+      </a> 
+      <a href="mapa">
+        <ion-segment-button value="camera"><ion-icon name="camera-outline">
+        </ion-icon></ion-segment-button>
+      </a>
+      <a href="mapa">
+        <ion-segment-button value="map">
+         <ion-icon name="map-outline" ></ion-icon>
         </ion-segment-button>
-        <ion-segment-button value="finger-print-outline">
-          <ion-icon name="finger-print-outline"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-segment-button value="finger-print">
+          <ion-icon name="finger-print-outline" ></ion-icon>
         </ion-segment-button>
-      </ion-segment>
-    </ion-toolbar>
-  </ion-footer>
+      </a>   
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>                   
+                     
+              
+        
+        
+     

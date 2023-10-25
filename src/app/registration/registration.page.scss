@@ -16,5 +16,16 @@ ion-content {
     max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
   }
+  .horizontal-icons {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+  }
+  .ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
   
   

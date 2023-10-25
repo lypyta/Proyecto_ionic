@@ -44,5 +44,12 @@ ion-card {
   background-color: black; 
   color: white; 
 }
+.horizontal-icons {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+}
+
+
 
 
